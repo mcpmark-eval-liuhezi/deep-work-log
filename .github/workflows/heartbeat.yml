@@ -1,0 +1,13 @@
+name: heartbeat
+
+on:
+  workflow_dispatch:
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo heartbeat
+        run: |
+          echo "$(date)"
+          echo "heartbeat ok"
